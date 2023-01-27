@@ -1,0 +1,66 @@
+@import 'styles/variables.scss';
+
+.container {
+  width: 196px;
+  height: 236px;
+  border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba($secondary, 0.8);
+  padding: 11px 11px 15px 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.heading_container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.more_button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 11px 16px;
+  border-radius: 6px;
+  backdrop-filter: blur(5px);
+  background-color: rgba($white, 0.2);
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+
+  &:hover {
+    background-color: rgba($white, 0.5);
+  }
+}
+
+.active_more_button {
+  background-color: rgba($white, 0.5);
+}
+
+.popover_delete_option {
+  > p {
+    color: $red-1;
+  }
+}
+
+.info_container {
+  > h6 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba($white, 0.7);
+    margin-bottom: 2px;
+  }
+
+  > h5 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: $white;
+  }
+}
